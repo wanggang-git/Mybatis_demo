@@ -12,7 +12,6 @@ import org.springframework.context.annotation.Configuration;
 public class CustomerConfig {
     private Long workerId;
     private Long datacenterId;
-    private String scheduleTime;
 
     @Bean
     public IdWorker createIdWorker() {

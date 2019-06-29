@@ -1,0 +1,31 @@
+spring:
+  jmx:
+    default-domain: mybatis
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mybatis-demo?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+mybatis:
+  typeAliasesPackage: com.wg.demo.po
+  mapper-locations: classpath*:mapper/*.xml
+
+comment.avatar: /images/avatar.png
+
+
+logging:
+  level:
+    root: info
+    com.wg.demo: debug
+  file: ../mybatis-demo.log
+
+server:
+  port: 9292
+  servlet:
+    context-path: /mybatis
+  error:
+    path: /mybatis/error
+
+util:
+  workerId: 5
+  datacenterId: 10

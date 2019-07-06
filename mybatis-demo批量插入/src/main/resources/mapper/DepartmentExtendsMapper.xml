@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.wg.demo.dao.DepartmentMapper">
+  <insert id="insertDepartments" useGeneratedKeys="true" keyProperty="id" parameterType="com.wg.demo.po.Department">
+    insert into department (id, dept_name, descr, 
+      create_time)
+    values
+      <foreach collection="list" item="dept" index="index" separator=",">
+        (#{dept.id,jdbcType=BIGINT}, #{dept.deptName,jdbcType=VARCHAR}, #{dept.descr,jdbcType=VARCHAR},
+        #{dept.createTime,jdbcType=TIMESTAMP})
+      </foreach>
+  </insert>
+  <insert id="insertDepartments2" parameterType="com.wg.demo.po.Department">
+    insert into department
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+        id,
+        dept_name,
+        descr,
+        create_time,
+    </trim>
+    values
+      <foreach collection="list" item="dept" index="index" separator=",">
+        (
+      <if test="dept.id != null">
+        #{dept.id,jdbcType=BIGINT},
+      </if>
+      <if test="dept.deptName != null">
+        #{dept.deptName,jdbcType=VARCHAR},
+      </if>
+      <if test="dept.descr != null">
+        #{dept.descr,jdbcType=VARCHAR},
+      </if>
+      <if test="dept.createTime != null">
+        #{dept.createTime,jdbcType=TIMESTAMP}
+      </if>
+        )
+      </foreach>
+
+  </insert>
+  <insert id="insertAutoId" useGeneratedKeys="true" keyProperty="id" parameterType="com.wg.demo.po.Department">
+    insert into department (id,dept_name, descr,create_time)
+    values (#{id,jdbcType=BIGINT}, #{deptName,jdbcType=VARCHAR}, #{descr,jdbcType=VARCHAR},
+      #{createTime,jdbcType=TIMESTAMP})
+  </insert>
+  <select id="getDeptName" parameterType="java.lang.Long" resultType="string">
+    select
+     dept_name
+    from department
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <select id="getDeptById" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select
+    *
+    from department
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+
+  <select id="getDeptAsMap" parameterType="java.lang.Long" resultType="map">
+    select
+    *
+    from department
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <select id="getDeptAsMaps"   resultType="map">
+    select
+    *
+    from department
+  </select>
+  <select id="selectAll"   resultMap="BaseResultMap">
+    select
+    *
+    from department
+  </select>
+  <resultMap id="deptResultMap" type="com.wg.demo.po.Department">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="dept_name" jdbcType="VARCHAR" property="deptName" />
+    <result column="descr" jdbcType="VARCHAR" property="descr" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <association property="employees"  javaType="com.wg.demo.po.Employee" >
+    </association>
+  </resultMap>
+  <select id="getDeptWithEmployees"   resultMap="deptResultMap">
+    select
+    d.*,e.*
+    from department d
+    left join employee e on e.dept_id = d.id
+  </select>
+
+</mapper>

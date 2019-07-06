@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wg.demo.dao.EmployeeMapper">
+  <select id="findByPaging" resultMap="BaseResultMap" parameterType="com.github.pagehelper.Page">
+    select
+    *
+    from employee
+    </select>
+
+  <select id="selectByGenderAndAge" resultMap="BaseResultMap" >
+    select
+    *
+    from employee where gender = #{param1} and age = #{param2}
+    </select>
+  <select id="selectByGenderAndAge2" resultMap="BaseResultMap" >
+    select
+    *
+    from employee where gender = #{param1} and age = #{param2}
+    </select>
+  <select id="selectByMapParams" resultMap="BaseResultMap" parameterType="map">
+    select
+    *
+    from employee where gender = #{gender} and age = #{age}
+  </select>
+  <select id="selectByBeans" resultMap="BaseResultMap" parameterType="com.wg.demo.po.Employee">
+    select
+    *
+    from employee where gender = #{gender} and age = #{age}
+  </select>
+  <select id="findByJSONObject" resultMap="BaseResultMap" parameterType="com.alibaba.fastjson.JSONObject">
+    select
+    *
+    from employee where gender = #{gender} and age = #{age}
+  </select>
+  <select id="findByList" resultMap="BaseResultMap" >
+SELECT * from employee where age in
+    <foreach collection="list" open="(" separator="," close=")" item="age">
+      #{age}
+    </foreach>
+  </select>
+    <select id="findByDepartment" resultMap="BaseResultMap" parameterType="com.wg.demo.po.Department">
+        SELECT * from employee where dept_id =#{department.id} and age in
+        <foreach collection="department.employees" open="(" separator="," close=")" item="employee">
+            #{employee.age}
+        </foreach>
+    </select>
+</mapper>

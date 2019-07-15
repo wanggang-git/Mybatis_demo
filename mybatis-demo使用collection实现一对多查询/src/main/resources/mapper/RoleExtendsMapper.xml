@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wg.demo.dao.RoleMapper">
+  <resultMap id="CollectionMap" type="com.wg.demo.po.Role">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="role_name" jdbcType="VARCHAR" property="roleName" />
+    <collection property="users" ofType="com.wg.demo.po.User">
+      <id column="user_id" property="id" />
+      <result column="nick_name" jdbcType="VARCHAR" property="nickName" />
+      <result column="login_name" jdbcType="VARCHAR" property="loginName" />
+      <result column="password" jdbcType="VARCHAR" property="password" />
+      <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    </collection>
+  </resultMap>
+  <resultMap id="CollectionMap_step" type="com.wg.demo.po.Role">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="role_name" jdbcType="VARCHAR" property="roleName" />
+    <collection property="users" ofType="com.wg.demo.po.User" column="id" select="com.wg.demo.dao.UserMapper.getUserInfoByRoleId">
+    </collection>
+  </resultMap>
+  <select id="selectRoleAndUserInfo"  resultMap="CollectionMap">
+    select
+    r.*,u.id user_id,u.nick_name,u.login_name,u.password,u.create_time
+    from role r
+    left join user u on u.role_id = r.id
+     where r.id = #{roldId,jdbcType=BIGINT}
+  </select>
+  <select id="selectRoleAndUserInfo_step" parameterType="java.lang.Long" resultMap="CollectionMap_step">
+    select
+    r.*
+    from role r
+    where r.id = #{roldId,jdbcType=BIGINT}
+  </select>
+
+
+</mapper>

@@ -1,0 +1,49 @@
+spring:
+  jmx:
+    default-domain: mybatis
+  datasource:
+    db1:
+      jdbc-url: jdbc:mysql://localhost:3306/mybatis-demo?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+      username: root
+      password: root
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      max-idle: 10
+      max-wait: 10000
+      min-idle: 5
+      initial-size: 5
+      dialect: mysql
+    db2:
+      jdbc-url: jdbc:mysql://localhost:3306/mybatis-demo?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+      username: root
+      password: root
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      max-idle: 10
+      max-wait: 10000
+      min-idle: 5
+      initial-size: 5
+      dialect: mysql
+mybatis:
+  typeAliasesPackage: com.wg.demo.po
+  mapper-locations: classpath*:mapper/*.xml
+  configuration:
+    cache-enabled: true
+
+comment.avatar: /images/avatar.png
+
+
+logging:
+  level:
+    root: info
+    com.wg.demo: debug
+  file: ../mybatis-demo.log
+
+server:
+  port: 9393
+  servlet:
+    context-path: /mybatis
+  error:
+    path: /mybatis/error
+
+util:
+  workerId: 5
+  datacenterId: 10

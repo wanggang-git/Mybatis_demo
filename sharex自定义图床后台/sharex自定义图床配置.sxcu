@@ -1,0 +1,18 @@
+﻿{
+  "Version": "12.4.1",
+  "Name": "self-Pic-bed",
+  "DestinationType": "ImageUploader",
+  "RequestMethod": "POST",
+  "RequestURL": "http://192.168.1.166:9293/mybatis/pic/upload",
+  "Parameters": {
+    "jessionids": "sharex-upload-pic"
+  },
+  "Body": "MultipartFormData",
+  "Arguments": {
+    "token": "",
+    "key": "%y%yy%d%h%mi-%ra.png",
+    "file": "\"$input$"
+  },
+  "FileFormName": "file",
+  "URL": "$json:data.fileUrl$"
+}

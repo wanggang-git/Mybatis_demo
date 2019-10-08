@@ -1,0 +1,30 @@
+spring:
+  mvc:
+    static-path-pattern: /**
+  resources:
+    static-locations: classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/,file:${serverInfo.uploadpath}
+  servlet:
+    multipart:
+      max-file-size: 10MB  #最大文件 100M
+      max-request-size: 10MB
+  jmx:
+    default-domain: mybatis
+comment.avatar: /images/avatar.png
+
+
+logging:
+  level:
+    root: info
+    com.wg.demo: debug
+  file: ../sharex.log
+
+
+serverInfo:
+  baseurl: http://192.168.1.174:9293/mybatis/
+  uploadpath: E:\sharex\uploadFile\
+server:
+  port: 9293
+  servlet:
+    context-path: /mybatis
+  error:
+    path: /mybatis/error

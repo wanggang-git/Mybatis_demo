@@ -8,23 +8,23 @@ spring:
       max-file-size: 10MB  #最大文件 100M
       max-request-size: 10MB
   jmx:
-    default-domain: mybatis
-comment.avatar: /images/avatar.png
+    default-domain: sharex
 
 
 logging:
   level:
     root: info
     com.wg.demo: debug
-  file: ../sharex.log
-
+  file: ../mybatis-demo.log
 
 serverInfo:
-  baseurl: http://192.168.1.174:9293/mybatis/
-  uploadpath: E:\sharex\uploadFile\
+  # baseurl项目部署后的访问地址
+  baseurl: http://192.168.1.188:8080/sharex/
+  #uploadpath为上传文件的保存路径
+  uploadpath: c:\sharex\uploadFile\
 server:
-  port: 9293
+  port: 8080
   servlet:
-    context-path: /mybatis
+    context-path: /sharex
   error:
-    path: /mybatis/error
+    path: /sharex/error

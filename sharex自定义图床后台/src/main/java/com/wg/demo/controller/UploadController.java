@@ -30,7 +30,7 @@ public class UploadController {
         if(jessionids == null || jessionids.isEmpty()){
             return ResultMsg.getFailedMsg("jessionids 不能为空");
         }
-        if(!jessionids.equals("sharex-wanggang-upload-pic"))
+        if(!jessionids.equals("9be51d2f-bb1a-4c61-b989-c3d126211d661570588000594"))
             return ResultMsg.getFailedMsg("jessionids 错误");
 
         long size = (long) file.getSize();
@@ -43,10 +43,8 @@ public class UploadController {
         if (resultMsg.getResult() != "SUCCESS") {
             return ResultMsg.getFailedMsg("保存文件失败");
         }
-        // msgType group one
 
         FileInfo fileInfo = (FileInfo) resultMsg.getData();
-
 
         resultMsg.setData(fileInfo);
         return resultMsg;

@@ -1,5 +1,6 @@
 package com.wg.demo.dao;
 
+import com.alibaba.fastjson.JSONObject;
 import com.wg.demo.po.Role;
 
 import java.util.List;
@@ -18,6 +19,8 @@ public interface RoleMapper {
     int updateByPrimaryKey(Role record);
 
     Role selectRoleAndUserInfo(Long roleId);
+
+    List<JSONObject>  selectList(Long roleId);
 
     Role selectRoleAndUserInfo_step(Long roleId);
 

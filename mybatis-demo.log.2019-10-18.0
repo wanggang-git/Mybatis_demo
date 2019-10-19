@@ -1,0 +1,662 @@
+2019-10-17 14:39:50.774  INFO 8232 --- [restartedMain] com.wg.demo.MybatisApplication           : Starting MybatisApplication on DESKTOP-1JP5R06 with PID 8232 (started by bdqx_ in E:\2.workspace\git_workspace\Mybaitis_demo\mybatis-demo动态SQL)
+2019-10-17 14:39:50.791 DEBUG 8232 --- [restartedMain] com.wg.demo.MybatisApplication           : Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019-10-17 14:39:50.792  INFO 8232 --- [restartedMain] com.wg.demo.MybatisApplication           : No active profile set, falling back to default profiles: default
+2019-10-17 14:39:51.365  INFO 8232 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-17 14:39:51.366  INFO 8232 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-17 14:39:53.459  INFO 8232 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$37859450] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-17 14:39:54.806  INFO 8232 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9292 (http)
+2019-10-17 14:39:54.827  INFO 8232 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-17 14:39:54.828  INFO 8232 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-10-17 14:39:54.835  INFO 8232 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\java\jdk1.8.0_131\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Program Files (x86)\NetSarang\Xftp 6\;D:\Program Files (x86)\NetSarang\Xshell 6\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\1.我的下载\nTrun\nTrun_V3.0.3\Goto;C:\;rogram Files\Microsoft MPI\Bin\;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\Program Files\java\jdk1.8.0_131\bin;D:\Program Files\java\jdk1.8.0_131\jre\bin;D:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;D:\Program Files\Microsoft SQL Server\140\Tools\Binn\;D:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;D:\Program Files\Microsoft SQL Server\140\DTS\Binn\;E:\1.codetools\maven-3.5.4\bin\;E:\1.codetools\Anaconda3;E:\1.codetools\Anaconda3\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;D:\Program Files\erl10.0.1\bin;D:\Program Files\nodejs\;D:\Program Files\TortoiseSVN\bin;D:\Program Files\cmder\Cmder.exe;E:\1.codetools\adb;C:\ProgramData\chocolatey\bin;E:\1.codetools\mysql-5.7.23-winx64\bin;C:\Program Files (x86)\Google\Chrome\Application;C:\Users\bdqx_\AppData\Local\Microsoft\WindowsApps;;d:\Program Files\Docker Toolbox;d:\Program Files\JetBrains\PyCharm 2018.3.1\bin;;C:\Users\bdqx_\AppData\Roaming\npm;E:\1.codetools\Microsoft VS Code\bin;.]
+2019-10-17 14:39:55.142  INFO 8232 --- [restartedMain] o.a.c.c.C.[.[localhost].[/mybatis]       : Initializing Spring embedded WebApplicationContext
+2019-10-17 14:39:55.142  INFO 8232 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3776 ms
+2019-10-17 14:39:59.154  INFO 8232 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-17 14:39:59.302  INFO 8232 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-17 14:39:59.403  WARN 8232 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-10-17 14:40:00.160  INFO 8232 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-10-17 14:40:00.206  INFO 8232 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-10-17 14:40:00.225  INFO 8232 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-10-17 14:40:00.524  INFO 8232 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9292 (http) with context path '/mybatis'
+2019-10-17 14:40:00.527  INFO 8232 --- [restartedMain] com.wg.demo.MybatisApplication           : Started MybatisApplication in 10.707 seconds (JVM running for 12.924)
+2019-10-17 14:40:32.339  INFO 8232 --- [http-nio-9292-exec-1] o.a.c.c.C.[.[localhost].[/mybatis]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-17 14:40:32.339  INFO 8232 --- [http-nio-9292-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-17 14:40:32.384  INFO 8232 --- [http-nio-9292-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 45 ms
+2019-10-17 14:40:47.898  INFO 8232 --- [http-nio-9292-exec-5] com.wg.demo.common.aop.LogAspect         : Request : {url='http://localhost:9292/mybatis/employee/testWhere', ip='0:0:0:0:0:0:0:1', classMethod='com.wg.demo.controller.EmployeeController.getById', args=[miya, null]}
+2019-10-17 14:40:47.899  INFO 8232 --- [http-nio-9292-exec-5] com.wg.demo.common.aop.LogAspect         : request Param: [miya, null]
+2019-10-17 14:40:48.003  INFO 8232 --- [http-nio-9292-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-17 14:40:49.277 ERROR 8232 --- [http-nio-9292-exec-5] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
+
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:157)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:82)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:68)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:336)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:85)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:143)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy134.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy94.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:144)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:77)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58)
+	at com.sun.proxy.$Proxy97.testWhere(Unknown Source)
+	at com.wg.demo.controller.EmployeeController.getById(EmployeeController.java:42)
+	at com.wg.demo.controller.EmployeeController$$FastClassBySpringCGLIB$$6a3f6702.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:56)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:47)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:55)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:56)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:47)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:55)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:62)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.wg.demo.controller.EmployeeController$$EnhancerBySpringCGLIB$$65cc942f.getById(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-10-17 14:40:49.282  INFO 8232 --- [http-nio-9292-exec-5] com.wg.demo.common.aop.HttpAspect        : 方法异常时执行.....nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+### The error may exist in file [E:\2.workspace\git_workspace\Mybaitis_demo\mybatis-demo动态SQL\target\classes\mapper\EmployeeExtendsMapper.xml]
+### The error may involve com.wg.demo.dao.EmployeeMapper.testWhere
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+2019-10-17 14:40:49.283  INFO 8232 --- [http-nio-9292-exec-5] c.w.d.c.e.GlobalExceptionHandler         : nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+### The error may exist in file [E:\2.workspace\git_workspace\Mybaitis_demo\mybatis-demo动态SQL\target\classes\mapper\EmployeeExtendsMapper.xml]
+### The error may involve com.wg.demo.dao.EmployeeMapper.testWhere
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+2019-10-17 14:40:49.295  WARN 8232 --- [http-nio-9292-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+### The error may exist in file [E:\2.workspace\git_workspace\Mybaitis_demo\mybatis-demo动态SQL\target\classes\mapper\EmployeeExtendsMapper.xml]
+### The error may involve com.wg.demo.dao.EmployeeMapper.testWhere
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)]
+2019-10-17 14:41:00.488  INFO 8232 --- [http-nio-9292-exec-1] com.wg.demo.common.aop.LogAspect         : Request : {url='http://localhost:9292/mybatis/employee/testWhere', ip='0:0:0:0:0:0:0:1', classMethod='com.wg.demo.controller.EmployeeController.getById', args=[miya, null]}
+2019-10-17 14:41:00.489  INFO 8232 --- [http-nio-9292-exec-1] com.wg.demo.common.aop.LogAspect         : request Param: [miya, null]
+2019-10-17 14:41:00.489  INFO 8232 --- [http-nio-9292-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-17 14:41:01.505 ERROR 8232 --- [http-nio-9292-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
+
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:157)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:82)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:68)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:336)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:85)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:143)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy134.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy94.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:144)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:77)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58)
+	at com.sun.proxy.$Proxy97.testWhere(Unknown Source)
+	at com.wg.demo.controller.EmployeeController.getById(EmployeeController.java:42)
+	at com.wg.demo.controller.EmployeeController$$FastClassBySpringCGLIB$$6a3f6702.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:56)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:47)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:55)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:56)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:47)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:55)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:62)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.wg.demo.controller.EmployeeController$$EnhancerBySpringCGLIB$$65cc942f.getById(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-10-17 14:41:01.507  INFO 8232 --- [http-nio-9292-exec-1] com.wg.demo.common.aop.HttpAspect        : 方法异常时执行.....nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+### The error may exist in file [E:\2.workspace\git_workspace\Mybaitis_demo\mybatis-demo动态SQL\target\classes\mapper\EmployeeExtendsMapper.xml]
+### The error may involve com.wg.demo.dao.EmployeeMapper.testWhere
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+2019-10-17 14:41:01.507  INFO 8232 --- [http-nio-9292-exec-1] c.w.d.c.e.GlobalExceptionHandler         : nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+### The error may exist in file [E:\2.workspace\git_workspace\Mybaitis_demo\mybatis-demo动态SQL\target\classes\mapper\EmployeeExtendsMapper.xml]
+### The error may involve com.wg.demo.dao.EmployeeMapper.testWhere
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+2019-10-17 14:41:01.516  WARN 8232 --- [http-nio-9292-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+### The error may exist in file [E:\2.workspace\git_workspace\Mybaitis_demo\mybatis-demo动态SQL\target\classes\mapper\EmployeeExtendsMapper.xml]
+### The error may involve com.wg.demo.dao.EmployeeMapper.testWhere
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)]
+2019-10-17 14:41:48.840  INFO 2180 --- [restartedMain] com.wg.demo.MybatisApplication           : Starting MybatisApplication on DESKTOP-1JP5R06 with PID 2180 (started by bdqx_ in E:\2.workspace\git_workspace\Mybaitis_demo\mybatis-demo动态SQL)
+2019-10-17 14:41:48.842 DEBUG 2180 --- [restartedMain] com.wg.demo.MybatisApplication           : Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019-10-17 14:41:48.842  INFO 2180 --- [restartedMain] com.wg.demo.MybatisApplication           : No active profile set, falling back to default profiles: default
+2019-10-17 14:41:48.909  INFO 2180 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-17 14:41:48.909  INFO 2180 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-17 14:41:49.930  INFO 2180 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ef95ad9e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-17 14:41:50.500  INFO 2180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9292 (http)
+2019-10-17 14:41:50.518  INFO 2180 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-17 14:41:50.518  INFO 2180 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-10-17 14:41:50.523  INFO 2180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\java\jdk1.8.0_131\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Program Files (x86)\NetSarang\Xftp 6\;D:\Program Files (x86)\NetSarang\Xshell 6\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\1.我的下载\nTrun\nTrun_V3.0.3\Goto;C:\;rogram Files\Microsoft MPI\Bin\;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\Program Files\java\jdk1.8.0_131\bin;D:\Program Files\java\jdk1.8.0_131\jre\bin;D:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;D:\Program Files\Microsoft SQL Server\140\Tools\Binn\;D:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;D:\Program Files\Microsoft SQL Server\140\DTS\Binn\;E:\1.codetools\maven-3.5.4\bin\;E:\1.codetools\Anaconda3;E:\1.codetools\Anaconda3\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;D:\Program Files\erl10.0.1\bin;D:\Program Files\nodejs\;D:\Program Files\TortoiseSVN\bin;D:\Program Files\cmder\Cmder.exe;E:\1.codetools\adb;C:\ProgramData\chocolatey\bin;E:\1.codetools\mysql-5.7.23-winx64\bin;C:\Program Files (x86)\Google\Chrome\Application;C:\Users\bdqx_\AppData\Local\Microsoft\WindowsApps;;d:\Program Files\Docker Toolbox;d:\Program Files\JetBrains\PyCharm 2018.3.1\bin;;C:\Users\bdqx_\AppData\Roaming\npm;E:\1.codetools\Microsoft VS Code\bin;.]
+2019-10-17 14:41:50.731  INFO 2180 --- [restartedMain] o.a.c.c.C.[.[localhost].[/mybatis]       : Initializing Spring embedded WebApplicationContext
+2019-10-17 14:41:50.731  INFO 2180 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1822 ms
+2019-10-17 14:41:51.707  INFO 2180 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-17 14:41:51.792  INFO 2180 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-17 14:41:51.882  WARN 2180 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-10-17 14:41:52.362  INFO 2180 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-10-17 14:41:52.374  INFO 2180 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-10-17 14:41:52.385  INFO 2180 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-10-17 14:41:52.517  INFO 2180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9292 (http) with context path '/mybatis'
+2019-10-17 14:41:52.520  INFO 2180 --- [restartedMain] com.wg.demo.MybatisApplication           : Started MybatisApplication in 4.255 seconds (JVM running for 5.821)
+2019-10-17 14:41:56.025  INFO 2180 --- [http-nio-9292-exec-1] o.a.c.c.C.[.[localhost].[/mybatis]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-17 14:41:56.026  INFO 2180 --- [http-nio-9292-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-17 14:41:56.042  INFO 2180 --- [http-nio-9292-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2019-10-17 14:41:56.071  INFO 2180 --- [http-nio-9292-exec-1] com.wg.demo.common.aop.LogAspect         : Request : {url='http://localhost:9292/mybatis/employee/testWhere', ip='0:0:0:0:0:0:0:1', classMethod='com.wg.demo.controller.EmployeeController.getById', args=[miya, null]}
+2019-10-17 14:41:56.071  INFO 2180 --- [http-nio-9292-exec-1] com.wg.demo.common.aop.LogAspect         : request Param: [miya, null]
+2019-10-17 14:41:56.101  INFO 2180 --- [http-nio-9292-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-17 14:41:57.255 ERROR 2180 --- [http-nio-9292-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
+
+java.sql.SQLException: null,  message from server: "Host 'DESKTOP-1JP5R06' is not allowed to connect to this MySQL server"
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:157)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:82)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:68)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:336)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:85)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:143)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy119.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy94.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:144)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:77)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58)
+	at com.sun.proxy.$Proxy97.testWhere(Unknown Source)
+	at com.wg.demo.controller.EmployeeController.getById(EmployeeController.java:42)
+	at com.wg.demo.controller.EmployeeController$$FastClassBySpringCGLIB$$6a3f6702.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:56)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:47)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:55)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:56)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:47)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:55)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:62)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.wg.demo.controller.EmployeeController$$EnhancerBySpringCGLIB$$1c065da6.getById(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-10-17 14:41:57.261  INFO 2180 --- [http-nio-9292-exec-1] com.wg.demo.common.aop.HttpAspect        : 方法异常时执行.....nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: null,  message from server: "Host 'DESKTOP-1JP5R06' is not allowed to connect to this MySQL server"
+### The error may exist in file [E:\2.workspace\git_workspace\Mybaitis_demo\mybatis-demo动态SQL\target\classes\mapper\EmployeeExtendsMapper.xml]
+### The error may involve com.wg.demo.dao.EmployeeMapper.testWhere
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: null,  message from server: "Host 'DESKTOP-1JP5R06' is not allowed to connect to this MySQL server"
+2019-10-17 14:41:57.262  INFO 2180 --- [http-nio-9292-exec-1] c.w.d.c.e.GlobalExceptionHandler         : nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: null,  message from server: "Host 'DESKTOP-1JP5R06' is not allowed to connect to this MySQL server"
+### The error may exist in file [E:\2.workspace\git_workspace\Mybaitis_demo\mybatis-demo动态SQL\target\classes\mapper\EmployeeExtendsMapper.xml]
+### The error may involve com.wg.demo.dao.EmployeeMapper.testWhere
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: null,  message from server: "Host 'DESKTOP-1JP5R06' is not allowed to connect to this MySQL server"
+2019-10-17 14:41:57.299  WARN 2180 --- [http-nio-9292-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: null,  message from server: "Host 'DESKTOP-1JP5R06' is not allowed to connect to this MySQL server"
+### The error may exist in file [E:\2.workspace\git_workspace\Mybaitis_demo\mybatis-demo动态SQL\target\classes\mapper\EmployeeExtendsMapper.xml]
+### The error may involve com.wg.demo.dao.EmployeeMapper.testWhere
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: null,  message from server: "Host 'DESKTOP-1JP5R06' is not allowed to connect to this MySQL server"]
+2019-10-17 14:42:05.875  INFO 2180 --- [Thread-13] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-17 14:42:06.726  INFO 2180 --- [restartedMain] com.wg.demo.MybatisApplication           : Starting MybatisApplication on DESKTOP-1JP5R06 with PID 2180 (started by bdqx_ in E:\2.workspace\git_workspace\Mybaitis_demo\mybatis-demo动态SQL)
+2019-10-17 14:42:06.726 DEBUG 2180 --- [restartedMain] com.wg.demo.MybatisApplication           : Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019-10-17 14:42:06.726  INFO 2180 --- [restartedMain] com.wg.demo.MybatisApplication           : No active profile set, falling back to default profiles: default
+2019-10-17 14:42:07.125  INFO 2180 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ef95ad9e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-17 14:42:07.340  INFO 2180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9292 (http)
+2019-10-17 14:42:07.341  INFO 2180 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-17 14:42:07.341  INFO 2180 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-10-17 14:42:07.379  INFO 2180 --- [restartedMain] o.a.c.c.C.[.[localhost].[/mybatis]       : Initializing Spring embedded WebApplicationContext
+2019-10-17 14:42:07.379  INFO 2180 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 651 ms
+2019-10-17 14:42:07.933  INFO 2180 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-17 14:42:07.985  INFO 2180 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-17 14:42:08.045  WARN 2180 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-10-17 14:42:08.416  INFO 2180 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-10-17 14:42:08.417  INFO 2180 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-10-17 14:42:08.420  INFO 2180 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-10-17 14:42:08.452  INFO 2180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9292 (http) with context path '/mybatis'
+2019-10-17 14:42:08.453  INFO 2180 --- [restartedMain] com.wg.demo.MybatisApplication           : Started MybatisApplication in 1.769 seconds (JVM running for 21.754)
+2019-10-17 14:42:08.455  INFO 2180 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-10-17 14:42:17.064  INFO 8304 --- [restartedMain] com.wg.demo.MybatisApplication           : Starting MybatisApplication on DESKTOP-1JP5R06 with PID 8304 (started by bdqx_ in E:\2.workspace\git_workspace\Mybaitis_demo\mybatis-demo动态SQL)
+2019-10-17 14:42:17.067 DEBUG 8304 --- [restartedMain] com.wg.demo.MybatisApplication           : Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019-10-17 14:42:17.067  INFO 8304 --- [restartedMain] com.wg.demo.MybatisApplication           : No active profile set, falling back to default profiles: default
+2019-10-17 14:42:17.141  INFO 8304 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-17 14:42:17.142  INFO 8304 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-17 14:42:18.206  INFO 8304 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7fec7165] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-17 14:42:18.795  INFO 8304 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9292 (http)
+2019-10-17 14:42:18.812  INFO 8304 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-17 14:42:18.813  INFO 8304 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-10-17 14:42:18.819  INFO 8304 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\java\jdk1.8.0_131\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Program Files (x86)\NetSarang\Xftp 6\;D:\Program Files (x86)\NetSarang\Xshell 6\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\1.我的下载\nTrun\nTrun_V3.0.3\Goto;C:\;rogram Files\Microsoft MPI\Bin\;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\Program Files\java\jdk1.8.0_131\bin;D:\Program Files\java\jdk1.8.0_131\jre\bin;D:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;D:\Program Files\Microsoft SQL Server\140\Tools\Binn\;D:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;D:\Program Files\Microsoft SQL Server\140\DTS\Binn\;E:\1.codetools\maven-3.5.4\bin\;E:\1.codetools\Anaconda3;E:\1.codetools\Anaconda3\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;D:\Program Files\erl10.0.1\bin;D:\Program Files\nodejs\;D:\Program Files\TortoiseSVN\bin;D:\Program Files\cmder\Cmder.exe;E:\1.codetools\adb;C:\ProgramData\chocolatey\bin;E:\1.codetools\mysql-5.7.23-winx64\bin;C:\Program Files (x86)\Google\Chrome\Application;C:\Users\bdqx_\AppData\Local\Microsoft\WindowsApps;;d:\Program Files\Docker Toolbox;d:\Program Files\JetBrains\PyCharm 2018.3.1\bin;;C:\Users\bdqx_\AppData\Roaming\npm;E:\1.codetools\Microsoft VS Code\bin;.]
+2019-10-17 14:42:18.933  INFO 8304 --- [restartedMain] o.a.c.c.C.[.[localhost].[/mybatis]       : Initializing Spring embedded WebApplicationContext
+2019-10-17 14:42:18.933  INFO 8304 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1791 ms
+2019-10-17 14:42:19.984  INFO 8304 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-17 14:42:20.068  INFO 8304 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-17 14:42:20.162  WARN 8304 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-10-17 14:42:20.656  INFO 8304 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-10-17 14:42:20.670  INFO 8304 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-10-17 14:42:20.681  INFO 8304 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-10-17 14:42:20.814  INFO 8304 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9292 (http) with context path '/mybatis'
+2019-10-17 14:42:20.817  INFO 8304 --- [restartedMain] com.wg.demo.MybatisApplication           : Started MybatisApplication in 4.227 seconds (JVM running for 5.407)
+2019-10-17 14:42:22.537  INFO 8304 --- [http-nio-9292-exec-1] o.a.c.c.C.[.[localhost].[/mybatis]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-17 14:42:22.538  INFO 8304 --- [http-nio-9292-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-17 14:42:22.552  INFO 8304 --- [http-nio-9292-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2019-10-17 14:42:22.578  INFO 8304 --- [http-nio-9292-exec-1] com.wg.demo.common.aop.LogAspect         : Request : {url='http://localhost:9292/mybatis/employee/testWhere', ip='0:0:0:0:0:0:0:1', classMethod='com.wg.demo.controller.EmployeeController.getById', args=[miya, null]}
+2019-10-17 14:42:22.578  INFO 8304 --- [http-nio-9292-exec-1] com.wg.demo.common.aop.LogAspect         : request Param: [miya, null]
+2019-10-17 14:42:22.609  INFO 8304 --- [http-nio-9292-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-17 14:42:22.858  INFO 8304 --- [http-nio-9292-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-17 14:42:22.872 DEBUG 8304 --- [http-nio-9292-exec-1] c.wg.demo.dao.EmployeeMapper.testWhere   : ==>  Preparing: select * from employee 
+2019-10-17 14:42:22.917 DEBUG 8304 --- [http-nio-9292-exec-1] c.wg.demo.dao.EmployeeMapper.testWhere   : ==> Parameters: 
+2019-10-17 14:42:23.072 DEBUG 8304 --- [http-nio-9292-exec-1] c.wg.demo.dao.EmployeeMapper.testWhere   : <==      Total: 402
+2019-10-17 14:42:23.075  INFO 8304 --- [http-nio-9292-exec-1] com.wg.demo.common.aop.LogAspect         : Result : ResultMsg{result='SUCCESS', resultCode=200, resultMsg='null', data=[com.wg.demo.po.Employee@2ded40a6, com.wg.demo.po.Employee@1c3ce8b4, com.wg.demo.po.Employee@19c60abc, com.wg.demo.po.Employee@4594ef2c, com.wg.demo.po.Employee@2bb6f48, com.wg.demo.po.Employee@79395ee3, com.wg.demo.po.Employee@50033892, com.wg.demo.po.Employee@328c5031, com.wg.demo.po.Employee@6b94b807, com.wg.demo.po.Employee@58692dd0, com.wg.demo.po.Employee@11e759e7, com.wg.demo.po.Employee@41ba9e32, com.wg.demo.po.Employee@fa05282, com.wg.demo.po.Employee@1e36e90b, com.wg.demo.po.Employee@35b5a34b, com.wg.demo.po.Employee@20ebf0c1, com.wg.demo.po.Employee@2d52921c, com.wg.demo.po.Employee@485580c, com.wg.demo.po.Employee@1c321c2c, com.wg.demo.po.Employee@63a09a93, com.wg.demo.po.Employee@5adb2689, com.wg.demo.po.Employee@743040e6, com.wg.demo.po.Employee@78efe130, com.wg.demo.po.Employee@1ffc98bc, com.wg.demo.po.Employee@1c101aa4, com.wg.demo.po.Employee@6ad15eb0, com.wg.demo.po.Employee@6d30c4bb, com.wg.demo.po.Employee@16f298d9, com.wg.demo.po.Employee@aab6599, com.wg.demo.po.Employee@6aef8ea2, com.wg.demo.po.Employee@1919a58, com.wg.demo.po.Employee@327eee3, com.wg.demo.po.Employee@5271c4b3, com.wg.demo.po.Employee@447ddac1, com.wg.demo.po.Employee@4933cb4c, com.wg.demo.po.Employee@755f647f, com.wg.demo.po.Employee@2957623b, com.wg.demo.po.Employee@3561e02, com.wg.demo.po.Employee@54e8cc8f, com.wg.demo.po.Employee@5a1a26f1, com.wg.demo.po.Employee@48cec133, com.wg.demo.po.Employee@7b5b6026, com.wg.demo.po.Employee@69c55776, com.wg.demo.po.Employee@62e3d911, com.wg.demo.po.Employee@5c1a4b27, com.wg.demo.po.Employee@7ce04ad2, com.wg.demo.po.Employee@3fddccdf, com.wg.demo.po.Employee@438aa164, com.wg.demo.po.Employee@4d478941, com.wg.demo.po.Employee@330fece1, com.wg.demo.po.Employee@62e5756b, com.wg.demo.po.Employee@74f269d2, com.wg.demo.po.Employee@58eeb8c, com.wg.demo.po.Employee@492a6738, com.wg.demo.po.Employee@ad1d5b, com.wg.demo.po.Employee@67f65865, com.wg.demo.po.Employee@15561d9c, com.wg.demo.po.Employee@fdfbba9, com.wg.demo.po.Employee@67f038cc, com.wg.demo.po.Employee@32907127, com.wg.demo.po.Employee@170f3014, com.wg.demo.po.Employee@65ffc3af, com.wg.demo.po.Employee@32fb184, com.wg.demo.po.Employee@3287e18f, com.wg.demo.po.Employee@5c66e85b, com.wg.demo.po.Employee@479faac3, com.wg.demo.po.Employee@39428025, com.wg.demo.po.Employee@3444851b, com.wg.demo.po.Employee@5f8b97f8, com.wg.demo.po.Employee@6578f778, com.wg.demo.po.Employee@4896005a, com.wg.demo.po.Employee@58ea380e, com.wg.demo.po.Employee@5b5d50bc, com.wg.demo.po.Employee@79bcbf98, com.wg.demo.po.Employee@1d0e425, com.wg.demo.po.Employee@8f38659, com.wg.demo.po.Employee@391aef4b, com.wg.demo.po.Employee@2546d78f, com.wg.demo.po.Employee@2331eece, com.wg.demo.po.Employee@376475bf, com.wg.demo.po.Employee@59eaa4af, com.wg.demo.po.Employee@4a03eab2, com.wg.demo.po.Employee@66682aa2, com.wg.demo.po.Employee@72b5725d, com.wg.demo.po.Employee@7ef67f78, com.wg.demo.po.Employee@2b755c6e, com.wg.demo.po.Employee@cef4e98, com.wg.demo.po.Employee@5591f2c2, com.wg.demo.po.Employee@18514ab7, com.wg.demo.po.Employee@19c6e3ff, com.wg.demo.po.Employee@6f2be5d1, com.wg.demo.po.Employee@35f61d14, com.wg.demo.po.Employee@27e0edef, com.wg.demo.po.Employee@9972bf7, com.wg.demo.po.Employee@39225279, com.wg.demo.po.Employee@3cb9f6f4, com.wg.demo.po.Employee@1c16fb19, com.wg.demo.po.Employee@2ceeb3ff, com.wg.demo.po.Employee@7748d81, com.wg.demo.po.Employee@7409c5cd, com.wg.demo.po.Employee@5fec2666, com.wg.demo.po.Employee@644072f, com.wg.demo.po.Employee@257f9ae3, com.wg.demo.po.Employee@1fe2142c, com.wg.demo.po.Employee@2183cea0, com.wg.demo.po.Employee@7d8c8c0, com.wg.demo.po.Employee@5ea9e25a, com.wg.demo.po.Employee@5165ced7, com.wg.demo.po.Employee@6eacfc95, com.wg.demo.po.Employee@2ff3a748, com.wg.demo.po.Employee@3ed93bde, com.wg.demo.po.Employee@41b559a4, com.wg.demo.po.Employee@48f44d53, com.wg.demo.po.Employee@7a0f6ae2, com.wg.demo.po.Employee@dffa9b6, com.wg.demo.po.Employee@666cb9d4, com.wg.demo.po.Employee@c18fe9f, com.wg.demo.po.Employee@d41cd84, com.wg.demo.po.Employee@7d837783, com.wg.demo.po.Employee@7e22d3fe, com.wg.demo.po.Employee@358526a3, com.wg.demo.po.Employee@362bf07a, com.wg.demo.po.Employee@50f2a653, com.wg.demo.po.Employee@38a72290, com.wg.demo.po.Employee@248bab19, com.wg.demo.po.Employee@4d4a37d2, com.wg.demo.po.Employee@8cfd016, com.wg.demo.po.Employee@97dd03d, com.wg.demo.po.Employee@70577168, com.wg.demo.po.Employee@6c3f2c17, com.wg.demo.po.Employee@1a861ee6, com.wg.demo.po.Employee@7d1dd9b3, com.wg.demo.po.Employee@360a3b49, com.wg.demo.po.Employee@2340e60b, com.wg.demo.po.Employee@91badab, com.wg.demo.po.Employee@1a582d7a, com.wg.demo.po.Employee@7d6f8d0b, com.wg.demo.po.Employee@59bb5c13, com.wg.demo.po.Employee@d99d47a, com.wg.demo.po.Employee@56711b4e, com.wg.demo.po.Employee@57f7d35e, com.wg.demo.po.Employee@542f4677, com.wg.demo.po.Employee@17d6628c, com.wg.demo.po.Employee@4923a053, com.wg.demo.po.Employee@20a7e70a, com.wg.demo.po.Employee@e151197, com.wg.demo.po.Employee@2a73d0db, com.wg.demo.po.Employee@7e06dcfe, com.wg.demo.po.Employee@6106eb83, com.wg.demo.po.Employee@4739d79d, com.wg.demo.po.Employee@73f832a9, com.wg.demo.po.Employee@3bd1e104, com.wg.demo.po.Employee@6ddd4f0e, com.wg.demo.po.Employee@6451f817, com.wg.demo.po.Employee@560ee34e, com.wg.demo.po.Employee@6263f14a, com.wg.demo.po.Employee@65417737, com.wg.demo.po.Employee@e3baac8, com.wg.demo.po.Employee@2f0e3cd2, com.wg.demo.po.Employee@521a61d8, com.wg.demo.po.Employee@3c8c5c63, com.wg.demo.po.Employee@6fb2dcd0, com.wg.demo.po.Employee@31849558, com.wg.demo.po.Employee@30113611, com.wg.demo.po.Employee@6e201b34, com.wg.demo.po.Employee@178d1e7c, com.wg.demo.po.Employee@2367780, com.wg.demo.po.Employee@3b2e6869, com.wg.demo.po.Employee@55b93d83, com.wg.demo.po.Employee@2a38a7b6, com.wg.demo.po.Employee@1b035f06, com.wg.demo.po.Employee@53a6012f, com.wg.demo.po.Employee@4fef7bfd, com.wg.demo.po.Employee@200560a1, com.wg.demo.po.Employee@217fe0c8, com.wg.demo.po.Employee@42b332b1, com.wg.demo.po.Employee@76b79989, com.wg.demo.po.Employee@7d3cff96, com.wg.demo.po.Employee@239b3959, com.wg.demo.po.Employee@7866a121, com.wg.demo.po.Employee@32d71475, com.wg.demo.po.Employee@280d9df6, com.wg.demo.po.Employee@52a6385f, com.wg.demo.po.Employee@1f04e483, com.wg.demo.po.Employee@15fa2faa, com.wg.demo.po.Employee@515cf2ce, com.wg.demo.po.Employee@32db4c7a, com.wg.demo.po.Employee@ac3965e, com.wg.demo.po.Employee@4e006fd3, com.wg.demo.po.Employee@78fc2e5f, com.wg.demo.po.Employee@10ac05a6, com.wg.demo.po.Employee@6cb008b, com.wg.demo.po.Employee@4bf89976, com.wg.demo.po.Employee@52efd880, com.wg.demo.po.Employee@229e664e, com.wg.demo.po.Employee@7c8fe5ce, com.wg.demo.po.Employee@73b3f000, com.wg.demo.po.Employee@5fb40d2e, com.wg.demo.po.Employee@e49bc80, com.wg.demo.po.Employee@deb8912, com.wg.demo.po.Employee@61344b5f, com.wg.demo.po.Employee@1e16f72a, com.wg.demo.po.Employee@5df8e5d4, com.wg.demo.po.Employee@c0a5460, com.wg.demo.po.Employee@4f27880d, com.wg.demo.po.Employee@66218964, com.wg.demo.po.Employee@7c6d0631, com.wg.demo.po.Employee@229af488, com.wg.demo.po.Employee@518e7736, com.wg.demo.po.Employee@3b0ebeca, com.wg.demo.po.Employee@2f467b14, com.wg.demo.po.Employee@5a8de4c0, com.wg.demo.po.Employee@78981f60, com.wg.demo.po.Employee@36ae0657, com.wg.demo.po.Employee@2aac554d, com.wg.demo.po.Employee@1f321f3c, com.wg.demo.po.Employee@27e960a5, com.wg.demo.po.Employee@61b356b1, com.wg.demo.po.Employee@29fd61f7, com.wg.demo.po.Employee@26b9500b, com.wg.demo.po.Employee@4ab9e031, com.wg.demo.po.Employee@31443109, com.wg.demo.po.Employee@73740c0f, com.wg.demo.po.Employee@1f213362, com.wg.demo.po.Employee@1a1ce0df, com.wg.demo.po.Employee@a4046ec, com.wg.demo.po.Employee@598727df, com.wg.demo.po.Employee@4f2ba5ae, com.wg.demo.po.Employee@324cbe8c, com.wg.demo.po.Employee@3a33f90f, com.wg.demo.po.Employee@5a6a8849, com.wg.demo.po.Employee@48fe507f, com.wg.demo.po.Employee@1f912f32, com.wg.demo.po.Employee@3a4f564e, com.wg.demo.po.Employee@3469b98e, com.wg.demo.po.Employee@e2e6ad4, com.wg.demo.po.Employee@18503c9c, com.wg.demo.po.Employee@58edf4fe, com.wg.demo.po.Employee@213183a4, com.wg.demo.po.Employee@5c34259c, com.wg.demo.po.Employee@4599565a, com.wg.demo.po.Employee@72640013, com.wg.demo.po.Employee@5f658158, com.wg.demo.po.Employee@220057ed, com.wg.demo.po.Employee@2d24fe71, com.wg.demo.po.Employee@7f12075e, com.wg.demo.po.Employee@c0e26a5, com.wg.demo.po.Employee@2c91a7f6, com.wg.demo.po.Employee@264c0363, com.wg.demo.po.Employee@498bd803, com.wg.demo.po.Employee@34cdf499, com.wg.demo.po.Employee@15c25be1, com.wg.demo.po.Employee@53d31521, com.wg.demo.po.Employee@440f9498, com.wg.demo.po.Employee@1fbdd9bc, com.wg.demo.po.Employee@18a794f9, com.wg.demo.po.Employee@5316f0d1, com.wg.demo.po.Employee@6b05157f, com.wg.demo.po.Employee@1a84519a, com.wg.demo.po.Employee@3ea01e6f, com.wg.demo.po.Employee@5a54e112, com.wg.demo.po.Employee@19b9b9ca, com.wg.demo.po.Employee@210923e6, com.wg.demo.po.Employee@1fe412ce, com.wg.demo.po.Employee@62c52c51, com.wg.demo.po.Employee@36e6ae2a, com.wg.demo.po.Employee@5e98bd03, com.wg.demo.po.Employee@6155b67c, com.wg.demo.po.Employee@2a39b9a3, com.wg.demo.po.Employee@292dc530, com.wg.demo.po.Employee@324615b3, com.wg.demo.po.Employee@7e6ca3d1, com.wg.demo.po.Employee@19ffe91e, com.wg.demo.po.Employee@5ebcbb54, com.wg.demo.po.Employee@5c55c6bd, com.wg.demo.po.Employee@47bc84cd, com.wg.demo.po.Employee@216d223d, com.wg.demo.po.Employee@1a305b5f, com.wg.demo.po.Employee@6822168a, com.wg.demo.po.Employee@4b1b6daf, com.wg.demo.po.Employee@32fc23b, com.wg.demo.po.Employee@1b5d9ba2, com.wg.demo.po.Employee@63b34805, com.wg.demo.po.Employee@73d527c9, com.wg.demo.po.Employee@e160d92, com.wg.demo.po.Employee@79611779, com.wg.demo.po.Employee@6b8b30, com.wg.demo.po.Employee@5a5a1f9b, com.wg.demo.po.Employee@641ef3df, com.wg.demo.po.Employee@15b5fafa, com.wg.demo.po.Employee@495bc177, com.wg.demo.po.Employee@4377b900, com.wg.demo.po.Employee@50643aba, com.wg.demo.po.Employee@6abc6866, com.wg.demo.po.Employee@7dfb4c3f, com.wg.demo.po.Employee@3ba4539, com.wg.demo.po.Employee@72fa0e1e, com.wg.demo.po.Employee@7b8ca77f, com.wg.demo.po.Employee@5cb19685, com.wg.demo.po.Employee@d7383a7, com.wg.demo.po.Employee@2f5bf6e9, com.wg.demo.po.Employee@31720b22, com.wg.demo.po.Employee@61a7b637, com.wg.demo.po.Employee@70587f1f, com.wg.demo.po.Employee@c42343, com.wg.demo.po.Employee@214e1362, com.wg.demo.po.Employee@7d841f72, com.wg.demo.po.Employee@4e97375a, com.wg.demo.po.Employee@6f68cbf0, com.wg.demo.po.Employee@3e6c007c, com.wg.demo.po.Employee@634ef74c, com.wg.demo.po.Employee@14143198, com.wg.demo.po.Employee@3d8a4fa1, com.wg.demo.po.Employee@63bbd78c, com.wg.demo.po.Employee@775ba820, com.wg.demo.po.Employee@4276dfa2, com.wg.demo.po.Employee@2d6e670a, com.wg.demo.po.Employee@1054c29c, com.wg.demo.po.Employee@3a64621e, com.wg.demo.po.Employee@4e1b313f, com.wg.demo.po.Employee@109359c1, com.wg.demo.po.Employee@26e5296d, com.wg.demo.po.Employee@3f08db3d, com.wg.demo.po.Employee@280d872a, com.wg.demo.po.Employee@225a9ebb, com.wg.demo.po.Employee@2d7b65dc, com.wg.demo.po.Employee@54d3827d, com.wg.demo.po.Employee@10236b1a, com.wg.demo.po.Employee@66fa90e3, com.wg.demo.po.Employee@10595c65, com.wg.demo.po.Employee@5851f479, com.wg.demo.po.Employee@53a12fd2, com.wg.demo.po.Employee@61eed0cd, com.wg.demo.po.Employee@3b8e12e1, com.wg.demo.po.Employee@6c2bcbd5, com.wg.demo.po.Employee@36aeb63d, com.wg.demo.po.Employee@21d1709d, com.wg.demo.po.Employee@6a03675c, com.wg.demo.po.Employee@58c47caa, com.wg.demo.po.Employee@1b1826d1, com.wg.demo.po.Employee@3167e8b7, com.wg.demo.po.Employee@402f5040, com.wg.demo.po.Employee@3bf555c3, com.wg.demo.po.Employee@6101c2c2, com.wg.demo.po.Employee@6f2dbc05, com.wg.demo.po.Employee@55ba4cf0, com.wg.demo.po.Employee@44f050c9, com.wg.demo.po.Employee@2b889d47, com.wg.demo.po.Employee@2947c1a7, com.wg.demo.po.Employee@2e1dd5b3, com.wg.demo.po.Employee@68adaea1, com.wg.demo.po.Employee@7a06456, com.wg.demo.po.Employee@10fdd7fc, com.wg.demo.po.Employee@500d281d, com.wg.demo.po.Employee@55d05c1b, com.wg.demo.po.Employee@51560023, com.wg.demo.po.Employee@2fea7fc2, com.wg.demo.po.Employee@169ee7e2, com.wg.demo.po.Employee@417941ae, com.wg.demo.po.Employee@20cf06ba, com.wg.demo.po.Employee@5c27690e, com.wg.demo.po.Employee@3de7349f, com.wg.demo.po.Employee@361876bc, com.wg.demo.po.Employee@6e3a4c13, com.wg.demo.po.Employee@93237c3, com.wg.demo.po.Employee@d75b9b6, com.wg.demo.po.Employee@78ad8332, com.wg.demo.po.Employee@444b02e0, com.wg.demo.po.Employee@5c5fb985, com.wg.demo.po.Employee@7c4703b1, com.wg.demo.po.Employee@68e7bb18, com.wg.demo.po.Employee@7427f8e6, com.wg.demo.po.Employee@5515f476, com.wg.demo.po.Employee@118b3fee, com.wg.demo.po.Employee@446179bc, com.wg.demo.po.Employee@fca491e, com.wg.demo.po.Employee@7506aad5, com.wg.demo.po.Employee@3d3a8fd4, com.wg.demo.po.Employee@7259ad56, com.wg.demo.po.Employee@2f0698ba, com.wg.demo.po.Employee@6f96df8d, com.wg.demo.po.Employee@6bbb984, com.wg.demo.po.Employee@39379718, com.wg.demo.po.Employee@226f0bcc, com.wg.demo.po.Employee@7bdcd2bb, com.wg.demo.po.Employee@207023dd, com.wg.demo.po.Employee@25faff9c, com.wg.demo.po.Employee@7f91a184, com.wg.demo.po.Employee@62c5edc7, com.wg.demo.po.Employee@430a4489, com.wg.demo.po.Employee@31fe456b, com.wg.demo.po.Employee@43915f51, com.wg.demo.po.Employee@e773931, com.wg.demo.po.Employee@1fc80a7a, com.wg.demo.po.Employee@5cdec1f5, com.wg.demo.po.Employee@15fc66e8, com.wg.demo.po.Employee@22757bd7, com.wg.demo.po.Employee@7db12e39, com.wg.demo.po.Employee@574a8913, com.wg.demo.po.Employee@21f77e34, com.wg.demo.po.Employee@2855021e, com.wg.demo.po.Employee@5ce131cb]}
+2019-10-17 14:42:23.077  INFO 8304 --- [http-nio-9292-exec-1] com.wg.demo.common.aop.HttpAspect        : 方法的返回值 : ResultMsg{result='SUCCESS', resultCode=200, resultMsg='null', data=[com.wg.demo.po.Employee@2ded40a6, com.wg.demo.po.Employee@1c3ce8b4, com.wg.demo.po.Employee@19c60abc, com.wg.demo.po.Employee@4594ef2c, com.wg.demo.po.Employee@2bb6f48, com.wg.demo.po.Employee@79395ee3, com.wg.demo.po.Employee@50033892, com.wg.demo.po.Employee@328c5031, com.wg.demo.po.Employee@6b94b807, com.wg.demo.po.Employee@58692dd0, com.wg.demo.po.Employee@11e759e7, com.wg.demo.po.Employee@41ba9e32, com.wg.demo.po.Employee@fa05282, com.wg.demo.po.Employee@1e36e90b, com.wg.demo.po.Employee@35b5a34b, com.wg.demo.po.Employee@20ebf0c1, com.wg.demo.po.Employee@2d52921c, com.wg.demo.po.Employee@485580c, com.wg.demo.po.Employee@1c321c2c, com.wg.demo.po.Employee@63a09a93, com.wg.demo.po.Employee@5adb2689, com.wg.demo.po.Employee@743040e6, com.wg.demo.po.Employee@78efe130, com.wg.demo.po.Employee@1ffc98bc, com.wg.demo.po.Employee@1c101aa4, com.wg.demo.po.Employee@6ad15eb0, com.wg.demo.po.Employee@6d30c4bb, com.wg.demo.po.Employee@16f298d9, com.wg.demo.po.Employee@aab6599, com.wg.demo.po.Employee@6aef8ea2, com.wg.demo.po.Employee@1919a58, com.wg.demo.po.Employee@327eee3, com.wg.demo.po.Employee@5271c4b3, com.wg.demo.po.Employee@447ddac1, com.wg.demo.po.Employee@4933cb4c, com.wg.demo.po.Employee@755f647f, com.wg.demo.po.Employee@2957623b, com.wg.demo.po.Employee@3561e02, com.wg.demo.po.Employee@54e8cc8f, com.wg.demo.po.Employee@5a1a26f1, com.wg.demo.po.Employee@48cec133, com.wg.demo.po.Employee@7b5b6026, com.wg.demo.po.Employee@69c55776, com.wg.demo.po.Employee@62e3d911, com.wg.demo.po.Employee@5c1a4b27, com.wg.demo.po.Employee@7ce04ad2, com.wg.demo.po.Employee@3fddccdf, com.wg.demo.po.Employee@438aa164, com.wg.demo.po.Employee@4d478941, com.wg.demo.po.Employee@330fece1, com.wg.demo.po.Employee@62e5756b, com.wg.demo.po.Employee@74f269d2, com.wg.demo.po.Employee@58eeb8c, com.wg.demo.po.Employee@492a6738, com.wg.demo.po.Employee@ad1d5b, com.wg.demo.po.Employee@67f65865, com.wg.demo.po.Employee@15561d9c, com.wg.demo.po.Employee@fdfbba9, com.wg.demo.po.Employee@67f038cc, com.wg.demo.po.Employee@32907127, com.wg.demo.po.Employee@170f3014, com.wg.demo.po.Employee@65ffc3af, com.wg.demo.po.Employee@32fb184, com.wg.demo.po.Employee@3287e18f, com.wg.demo.po.Employee@5c66e85b, com.wg.demo.po.Employee@479faac3, com.wg.demo.po.Employee@39428025, com.wg.demo.po.Employee@3444851b, com.wg.demo.po.Employee@5f8b97f8, com.wg.demo.po.Employee@6578f778, com.wg.demo.po.Employee@4896005a, com.wg.demo.po.Employee@58ea380e, com.wg.demo.po.Employee@5b5d50bc, com.wg.demo.po.Employee@79bcbf98, com.wg.demo.po.Employee@1d0e425, com.wg.demo.po.Employee@8f38659, com.wg.demo.po.Employee@391aef4b, com.wg.demo.po.Employee@2546d78f, com.wg.demo.po.Employee@2331eece, com.wg.demo.po.Employee@376475bf, com.wg.demo.po.Employee@59eaa4af, com.wg.demo.po.Employee@4a03eab2, com.wg.demo.po.Employee@66682aa2, com.wg.demo.po.Employee@72b5725d, com.wg.demo.po.Employee@7ef67f78, com.wg.demo.po.Employee@2b755c6e, com.wg.demo.po.Employee@cef4e98, com.wg.demo.po.Employee@5591f2c2, com.wg.demo.po.Employee@18514ab7, com.wg.demo.po.Employee@19c6e3ff, com.wg.demo.po.Employee@6f2be5d1, com.wg.demo.po.Employee@35f61d14, com.wg.demo.po.Employee@27e0edef, com.wg.demo.po.Employee@9972bf7, com.wg.demo.po.Employee@39225279, com.wg.demo.po.Employee@3cb9f6f4, com.wg.demo.po.Employee@1c16fb19, com.wg.demo.po.Employee@2ceeb3ff, com.wg.demo.po.Employee@7748d81, com.wg.demo.po.Employee@7409c5cd, com.wg.demo.po.Employee@5fec2666, com.wg.demo.po.Employee@644072f, com.wg.demo.po.Employee@257f9ae3, com.wg.demo.po.Employee@1fe2142c, com.wg.demo.po.Employee@2183cea0, com.wg.demo.po.Employee@7d8c8c0, com.wg.demo.po.Employee@5ea9e25a, com.wg.demo.po.Employee@5165ced7, com.wg.demo.po.Employee@6eacfc95, com.wg.demo.po.Employee@2ff3a748, com.wg.demo.po.Employee@3ed93bde, com.wg.demo.po.Employee@41b559a4, com.wg.demo.po.Employee@48f44d53, com.wg.demo.po.Employee@7a0f6ae2, com.wg.demo.po.Employee@dffa9b6, com.wg.demo.po.Employee@666cb9d4, com.wg.demo.po.Employee@c18fe9f, com.wg.demo.po.Employee@d41cd84, com.wg.demo.po.Employee@7d837783, com.wg.demo.po.Employee@7e22d3fe, com.wg.demo.po.Employee@358526a3, com.wg.demo.po.Employee@362bf07a, com.wg.demo.po.Employee@50f2a653, com.wg.demo.po.Employee@38a72290, com.wg.demo.po.Employee@248bab19, com.wg.demo.po.Employee@4d4a37d2, com.wg.demo.po.Employee@8cfd016, com.wg.demo.po.Employee@97dd03d, com.wg.demo.po.Employee@70577168, com.wg.demo.po.Employee@6c3f2c17, com.wg.demo.po.Employee@1a861ee6, com.wg.demo.po.Employee@7d1dd9b3, com.wg.demo.po.Employee@360a3b49, com.wg.demo.po.Employee@2340e60b, com.wg.demo.po.Employee@91badab, com.wg.demo.po.Employee@1a582d7a, com.wg.demo.po.Employee@7d6f8d0b, com.wg.demo.po.Employee@59bb5c13, com.wg.demo.po.Employee@d99d47a, com.wg.demo.po.Employee@56711b4e, com.wg.demo.po.Employee@57f7d35e, com.wg.demo.po.Employee@542f4677, com.wg.demo.po.Employee@17d6628c, com.wg.demo.po.Employee@4923a053, com.wg.demo.po.Employee@20a7e70a, com.wg.demo.po.Employee@e151197, com.wg.demo.po.Employee@2a73d0db, com.wg.demo.po.Employee@7e06dcfe, com.wg.demo.po.Employee@6106eb83, com.wg.demo.po.Employee@4739d79d, com.wg.demo.po.Employee@73f832a9, com.wg.demo.po.Employee@3bd1e104, com.wg.demo.po.Employee@6ddd4f0e, com.wg.demo.po.Employee@6451f817, com.wg.demo.po.Employee@560ee34e, com.wg.demo.po.Employee@6263f14a, com.wg.demo.po.Employee@65417737, com.wg.demo.po.Employee@e3baac8, com.wg.demo.po.Employee@2f0e3cd2, com.wg.demo.po.Employee@521a61d8, com.wg.demo.po.Employee@3c8c5c63, com.wg.demo.po.Employee@6fb2dcd0, com.wg.demo.po.Employee@31849558, com.wg.demo.po.Employee@30113611, com.wg.demo.po.Employee@6e201b34, com.wg.demo.po.Employee@178d1e7c, com.wg.demo.po.Employee@2367780, com.wg.demo.po.Employee@3b2e6869, com.wg.demo.po.Employee@55b93d83, com.wg.demo.po.Employee@2a38a7b6, com.wg.demo.po.Employee@1b035f06, com.wg.demo.po.Employee@53a6012f, com.wg.demo.po.Employee@4fef7bfd, com.wg.demo.po.Employee@200560a1, com.wg.demo.po.Employee@217fe0c8, com.wg.demo.po.Employee@42b332b1, com.wg.demo.po.Employee@76b79989, com.wg.demo.po.Employee@7d3cff96, com.wg.demo.po.Employee@239b3959, com.wg.demo.po.Employee@7866a121, com.wg.demo.po.Employee@32d71475, com.wg.demo.po.Employee@280d9df6, com.wg.demo.po.Employee@52a6385f, com.wg.demo.po.Employee@1f04e483, com.wg.demo.po.Employee@15fa2faa, com.wg.demo.po.Employee@515cf2ce, com.wg.demo.po.Employee@32db4c7a, com.wg.demo.po.Employee@ac3965e, com.wg.demo.po.Employee@4e006fd3, com.wg.demo.po.Employee@78fc2e5f, com.wg.demo.po.Employee@10ac05a6, com.wg.demo.po.Employee@6cb008b, com.wg.demo.po.Employee@4bf89976, com.wg.demo.po.Employee@52efd880, com.wg.demo.po.Employee@229e664e, com.wg.demo.po.Employee@7c8fe5ce, com.wg.demo.po.Employee@73b3f000, com.wg.demo.po.Employee@5fb40d2e, com.wg.demo.po.Employee@e49bc80, com.wg.demo.po.Employee@deb8912, com.wg.demo.po.Employee@61344b5f, com.wg.demo.po.Employee@1e16f72a, com.wg.demo.po.Employee@5df8e5d4, com.wg.demo.po.Employee@c0a5460, com.wg.demo.po.Employee@4f27880d, com.wg.demo.po.Employee@66218964, com.wg.demo.po.Employee@7c6d0631, com.wg.demo.po.Employee@229af488, com.wg.demo.po.Employee@518e7736, com.wg.demo.po.Employee@3b0ebeca, com.wg.demo.po.Employee@2f467b14, com.wg.demo.po.Employee@5a8de4c0, com.wg.demo.po.Employee@78981f60, com.wg.demo.po.Employee@36ae0657, com.wg.demo.po.Employee@2aac554d, com.wg.demo.po.Employee@1f321f3c, com.wg.demo.po.Employee@27e960a5, com.wg.demo.po.Employee@61b356b1, com.wg.demo.po.Employee@29fd61f7, com.wg.demo.po.Employee@26b9500b, com.wg.demo.po.Employee@4ab9e031, com.wg.demo.po.Employee@31443109, com.wg.demo.po.Employee@73740c0f, com.wg.demo.po.Employee@1f213362, com.wg.demo.po.Employee@1a1ce0df, com.wg.demo.po.Employee@a4046ec, com.wg.demo.po.Employee@598727df, com.wg.demo.po.Employee@4f2ba5ae, com.wg.demo.po.Employee@324cbe8c, com.wg.demo.po.Employee@3a33f90f, com.wg.demo.po.Employee@5a6a8849, com.wg.demo.po.Employee@48fe507f, com.wg.demo.po.Employee@1f912f32, com.wg.demo.po.Employee@3a4f564e, com.wg.demo.po.Employee@3469b98e, com.wg.demo.po.Employee@e2e6ad4, com.wg.demo.po.Employee@18503c9c, com.wg.demo.po.Employee@58edf4fe, com.wg.demo.po.Employee@213183a4, com.wg.demo.po.Employee@5c34259c, com.wg.demo.po.Employee@4599565a, com.wg.demo.po.Employee@72640013, com.wg.demo.po.Employee@5f658158, com.wg.demo.po.Employee@220057ed, com.wg.demo.po.Employee@2d24fe71, com.wg.demo.po.Employee@7f12075e, com.wg.demo.po.Employee@c0e26a5, com.wg.demo.po.Employee@2c91a7f6, com.wg.demo.po.Employee@264c0363, com.wg.demo.po.Employee@498bd803, com.wg.demo.po.Employee@34cdf499, com.wg.demo.po.Employee@15c25be1, com.wg.demo.po.Employee@53d31521, com.wg.demo.po.Employee@440f9498, com.wg.demo.po.Employee@1fbdd9bc, com.wg.demo.po.Employee@18a794f9, com.wg.demo.po.Employee@5316f0d1, com.wg.demo.po.Employee@6b05157f, com.wg.demo.po.Employee@1a84519a, com.wg.demo.po.Employee@3ea01e6f, com.wg.demo.po.Employee@5a54e112, com.wg.demo.po.Employee@19b9b9ca, com.wg.demo.po.Employee@210923e6, com.wg.demo.po.Employee@1fe412ce, com.wg.demo.po.Employee@62c52c51, com.wg.demo.po.Employee@36e6ae2a, com.wg.demo.po.Employee@5e98bd03, com.wg.demo.po.Employee@6155b67c, com.wg.demo.po.Employee@2a39b9a3, com.wg.demo.po.Employee@292dc530, com.wg.demo.po.Employee@324615b3, com.wg.demo.po.Employee@7e6ca3d1, com.wg.demo.po.Employee@19ffe91e, com.wg.demo.po.Employee@5ebcbb54, com.wg.demo.po.Employee@5c55c6bd, com.wg.demo.po.Employee@47bc84cd, com.wg.demo.po.Employee@216d223d, com.wg.demo.po.Employee@1a305b5f, com.wg.demo.po.Employee@6822168a, com.wg.demo.po.Employee@4b1b6daf, com.wg.demo.po.Employee@32fc23b, com.wg.demo.po.Employee@1b5d9ba2, com.wg.demo.po.Employee@63b34805, com.wg.demo.po.Employee@73d527c9, com.wg.demo.po.Employee@e160d92, com.wg.demo.po.Employee@79611779, com.wg.demo.po.Employee@6b8b30, com.wg.demo.po.Employee@5a5a1f9b, com.wg.demo.po.Employee@641ef3df, com.wg.demo.po.Employee@15b5fafa, com.wg.demo.po.Employee@495bc177, com.wg.demo.po.Employee@4377b900, com.wg.demo.po.Employee@50643aba, com.wg.demo.po.Employee@6abc6866, com.wg.demo.po.Employee@7dfb4c3f, com.wg.demo.po.Employee@3ba4539, com.wg.demo.po.Employee@72fa0e1e, com.wg.demo.po.Employee@7b8ca77f, com.wg.demo.po.Employee@5cb19685, com.wg.demo.po.Employee@d7383a7, com.wg.demo.po.Employee@2f5bf6e9, com.wg.demo.po.Employee@31720b22, com.wg.demo.po.Employee@61a7b637, com.wg.demo.po.Employee@70587f1f, com.wg.demo.po.Employee@c42343, com.wg.demo.po.Employee@214e1362, com.wg.demo.po.Employee@7d841f72, com.wg.demo.po.Employee@4e97375a, com.wg.demo.po.Employee@6f68cbf0, com.wg.demo.po.Employee@3e6c007c, com.wg.demo.po.Employee@634ef74c, com.wg.demo.po.Employee@14143198, com.wg.demo.po.Employee@3d8a4fa1, com.wg.demo.po.Employee@63bbd78c, com.wg.demo.po.Employee@775ba820, com.wg.demo.po.Employee@4276dfa2, com.wg.demo.po.Employee@2d6e670a, com.wg.demo.po.Employee@1054c29c, com.wg.demo.po.Employee@3a64621e, com.wg.demo.po.Employee@4e1b313f, com.wg.demo.po.Employee@109359c1, com.wg.demo.po.Employee@26e5296d, com.wg.demo.po.Employee@3f08db3d, com.wg.demo.po.Employee@280d872a, com.wg.demo.po.Employee@225a9ebb, com.wg.demo.po.Employee@2d7b65dc, com.wg.demo.po.Employee@54d3827d, com.wg.demo.po.Employee@10236b1a, com.wg.demo.po.Employee@66fa90e3, com.wg.demo.po.Employee@10595c65, com.wg.demo.po.Employee@5851f479, com.wg.demo.po.Employee@53a12fd2, com.wg.demo.po.Employee@61eed0cd, com.wg.demo.po.Employee@3b8e12e1, com.wg.demo.po.Employee@6c2bcbd5, com.wg.demo.po.Employee@36aeb63d, com.wg.demo.po.Employee@21d1709d, com.wg.demo.po.Employee@6a03675c, com.wg.demo.po.Employee@58c47caa, com.wg.demo.po.Employee@1b1826d1, com.wg.demo.po.Employee@3167e8b7, com.wg.demo.po.Employee@402f5040, com.wg.demo.po.Employee@3bf555c3, com.wg.demo.po.Employee@6101c2c2, com.wg.demo.po.Employee@6f2dbc05, com.wg.demo.po.Employee@55ba4cf0, com.wg.demo.po.Employee@44f050c9, com.wg.demo.po.Employee@2b889d47, com.wg.demo.po.Employee@2947c1a7, com.wg.demo.po.Employee@2e1dd5b3, com.wg.demo.po.Employee@68adaea1, com.wg.demo.po.Employee@7a06456, com.wg.demo.po.Employee@10fdd7fc, com.wg.demo.po.Employee@500d281d, com.wg.demo.po.Employee@55d05c1b, com.wg.demo.po.Employee@51560023, com.wg.demo.po.Employee@2fea7fc2, com.wg.demo.po.Employee@169ee7e2, com.wg.demo.po.Employee@417941ae, com.wg.demo.po.Employee@20cf06ba, com.wg.demo.po.Employee@5c27690e, com.wg.demo.po.Employee@3de7349f, com.wg.demo.po.Employee@361876bc, com.wg.demo.po.Employee@6e3a4c13, com.wg.demo.po.Employee@93237c3, com.wg.demo.po.Employee@d75b9b6, com.wg.demo.po.Employee@78ad8332, com.wg.demo.po.Employee@444b02e0, com.wg.demo.po.Employee@5c5fb985, com.wg.demo.po.Employee@7c4703b1, com.wg.demo.po.Employee@68e7bb18, com.wg.demo.po.Employee@7427f8e6, com.wg.demo.po.Employee@5515f476, com.wg.demo.po.Employee@118b3fee, com.wg.demo.po.Employee@446179bc, com.wg.demo.po.Employee@fca491e, com.wg.demo.po.Employee@7506aad5, com.wg.demo.po.Employee@3d3a8fd4, com.wg.demo.po.Employee@7259ad56, com.wg.demo.po.Employee@2f0698ba, com.wg.demo.po.Employee@6f96df8d, com.wg.demo.po.Employee@6bbb984, com.wg.demo.po.Employee@39379718, com.wg.demo.po.Employee@226f0bcc, com.wg.demo.po.Employee@7bdcd2bb, com.wg.demo.po.Employee@207023dd, com.wg.demo.po.Employee@25faff9c, com.wg.demo.po.Employee@7f91a184, com.wg.demo.po.Employee@62c5edc7, com.wg.demo.po.Employee@430a4489, com.wg.demo.po.Employee@31fe456b, com.wg.demo.po.Employee@43915f51, com.wg.demo.po.Employee@e773931, com.wg.demo.po.Employee@1fc80a7a, com.wg.demo.po.Employee@5cdec1f5, com.wg.demo.po.Employee@15fc66e8, com.wg.demo.po.Employee@22757bd7, com.wg.demo.po.Employee@7db12e39, com.wg.demo.po.Employee@574a8913, com.wg.demo.po.Employee@21f77e34, com.wg.demo.po.Employee@2855021e, com.wg.demo.po.Employee@5ce131cb]}
+2019-10-17 14:42:23.080  INFO 8304 --- [http-nio-9292-exec-1] com.wg.demo.common.aop.HttpAspect        : ------------------请求结束------------------
+2019-10-17 14:43:10.566  INFO 8304 --- [Thread-12] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-17 14:43:10.568  INFO 8304 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-17 14:43:10.577  INFO 8304 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-17 14:43:18.184  INFO 3388 --- [restartedMain] com.wg.demo.MybatisApplication           : Starting MybatisApplication on DESKTOP-1JP5R06 with PID 3388 (started by bdqx_ in E:\2.workspace\git_workspace\Mybaitis_demo\mybatis-demo动态SQL)
+2019-10-17 14:43:18.186 DEBUG 3388 --- [restartedMain] com.wg.demo.MybatisApplication           : Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019-10-17 14:43:18.186  INFO 3388 --- [restartedMain] com.wg.demo.MybatisApplication           : No active profile set, falling back to default profiles: default
+2019-10-17 14:43:18.229  INFO 3388 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-17 14:43:18.229  INFO 3388 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-17 14:43:19.398  INFO 3388 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$308b59c4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-17 14:43:20.141  INFO 3388 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9292 (http)
+2019-10-17 14:43:20.158  INFO 3388 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-17 14:43:20.158  INFO 3388 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-10-17 14:43:20.164  INFO 3388 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\java\jdk1.8.0_131\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Program Files (x86)\NetSarang\Xftp 6\;D:\Program Files (x86)\NetSarang\Xshell 6\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\1.我的下载\nTrun\nTrun_V3.0.3\Goto;C:\;rogram Files\Microsoft MPI\Bin\;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\Program Files\java\jdk1.8.0_131\bin;D:\Program Files\java\jdk1.8.0_131\jre\bin;D:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;D:\Program Files\Microsoft SQL Server\140\Tools\Binn\;D:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;D:\Program Files\Microsoft SQL Server\140\DTS\Binn\;E:\1.codetools\maven-3.5.4\bin\;E:\1.codetools\Anaconda3;E:\1.codetools\Anaconda3\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;D:\Program Files\erl10.0.1\bin;D:\Program Files\nodejs\;D:\Program Files\TortoiseSVN\bin;D:\Program Files\cmder\Cmder.exe;E:\1.codetools\adb;C:\ProgramData\chocolatey\bin;E:\1.codetools\mysql-5.7.23-winx64\bin;C:\Program Files (x86)\Google\Chrome\Application;C:\Users\bdqx_\AppData\Local\Microsoft\WindowsApps;;d:\Program Files\Docker Toolbox;d:\Program Files\JetBrains\PyCharm 2018.3.1\bin;;C:\Users\bdqx_\AppData\Roaming\npm;E:\1.codetools\Microsoft VS Code\bin;.]
+2019-10-17 14:43:20.304  INFO 3388 --- [restartedMain] o.a.c.c.C.[.[localhost].[/mybatis]       : Initializing Spring embedded WebApplicationContext
+2019-10-17 14:43:20.304  INFO 3388 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2075 ms
+2019-10-17 14:43:21.341  INFO 3388 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-17 14:43:21.423  INFO 3388 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-17 14:43:21.518  WARN 3388 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-10-17 14:43:21.985  INFO 3388 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-10-17 14:43:21.998  INFO 3388 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-10-17 14:43:22.009  INFO 3388 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-10-17 14:43:22.143  INFO 3388 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9292 (http) with context path '/mybatis'
+2019-10-17 14:43:22.146  INFO 3388 --- [restartedMain] com.wg.demo.MybatisApplication           : Started MybatisApplication in 4.498 seconds (JVM running for 5.68)
+2019-10-17 14:43:25.306  INFO 3388 --- [http-nio-9292-exec-1] o.a.c.c.C.[.[localhost].[/mybatis]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-17 14:43:25.306  INFO 3388 --- [http-nio-9292-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-17 14:43:25.320  INFO 3388 --- [http-nio-9292-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2019-10-17 14:43:25.348  INFO 3388 --- [http-nio-9292-exec-1] com.wg.demo.common.aop.LogAspect         : Request : {url='http://localhost:9292/mybatis/employee/testWhere', ip='0:0:0:0:0:0:0:1', classMethod='com.wg.demo.controller.EmployeeController.getById', args=[miya, null]}
+2019-10-17 14:43:25.348  INFO 3388 --- [http-nio-9292-exec-1] com.wg.demo.common.aop.LogAspect         : request Param: [miya, null]
+2019-10-17 14:43:25.379  INFO 3388 --- [http-nio-9292-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-17 14:43:25.484  INFO 3388 --- [http-nio-9292-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-17 14:43:25.489 DEBUG 3388 --- [http-nio-9292-exec-1] c.wg.demo.dao.EmployeeMapper.testWhere   : ==>  Preparing: select * from employee WHERE name like %% 
+2019-10-17 14:43:25.509 DEBUG 3388 --- [http-nio-9292-exec-1] c.wg.demo.dao.EmployeeMapper.testWhere   : ==> Parameters: 
+2019-10-17 14:43:25.648  INFO 3388 --- [http-nio-9292-exec-1] com.wg.demo.common.aop.HttpAspect        : 方法异常时执行.....
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%%' at line 4
+### The error may exist in file [E:\2.workspace\git_workspace\Mybaitis_demo\mybatis-demo动态SQL\target\classes\mapper\EmployeeExtendsMapper.xml]
+### The error may involve com.wg.demo.dao.EmployeeMapper.testWhere-Inline
+### The error occurred while setting parameters
+### SQL: select     *     from employee      WHERE  name like %%
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%%' at line 4
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%%' at line 4
+2019-10-17 14:43:25.650  INFO 3388 --- [http-nio-9292-exec-1] c.w.d.c.e.GlobalExceptionHandler         : 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%%' at line 4
+### The error may exist in file [E:\2.workspace\git_workspace\Mybaitis_demo\mybatis-demo动态SQL\target\classes\mapper\EmployeeExtendsMapper.xml]
+### The error may involve com.wg.demo.dao.EmployeeMapper.testWhere-Inline
+### The error occurred while setting parameters
+### SQL: select     *     from employee      WHERE  name like %%
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%%' at line 4
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%%' at line 4
+2019-10-17 14:43:25.690  WARN 3388 --- [http-nio-9292-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%%' at line 4
+### The error may exist in file [E:\2.workspace\git_workspace\Mybaitis_demo\mybatis-demo动态SQL\target\classes\mapper\EmployeeExtendsMapper.xml]
+### The error may involve com.wg.demo.dao.EmployeeMapper.testWhere-Inline
+### The error occurred while setting parameters
+### SQL: select     *     from employee      WHERE  name like %%
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%%' at line 4
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%%' at line 4]
+2019-10-17 14:43:49.615  INFO 3388 --- [Thread-12] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-17 14:43:49.616  INFO 3388 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-17 14:43:49.622  INFO 3388 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-17 14:43:50.520  INFO 3388 --- [restartedMain] com.wg.demo.MybatisApplication           : Starting MybatisApplication on DESKTOP-1JP5R06 with PID 3388 (started by bdqx_ in E:\2.workspace\git_workspace\Mybaitis_demo\mybatis-demo动态SQL)
+2019-10-17 14:43:50.522 DEBUG 3388 --- [restartedMain] com.wg.demo.MybatisApplication           : Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019-10-17 14:43:50.522  INFO 3388 --- [restartedMain] com.wg.demo.MybatisApplication           : No active profile set, falling back to default profiles: default
+2019-10-17 14:43:51.002  INFO 3388 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$308b59c4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-17 14:43:51.246  INFO 3388 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9292 (http)
+2019-10-17 14:43:51.247  INFO 3388 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-17 14:43:51.247  INFO 3388 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-10-17 14:43:51.309  INFO 3388 --- [restartedMain] o.a.c.c.C.[.[localhost].[/mybatis]       : Initializing Spring embedded WebApplicationContext
+2019-10-17 14:43:51.309  INFO 3388 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 782 ms
+2019-10-17 14:43:51.860  INFO 3388 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-17 14:43:51.923  INFO 3388 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-17 14:43:52.006  WARN 3388 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-10-17 14:43:52.455  INFO 3388 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-10-17 14:43:52.455  INFO 3388 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-10-17 14:43:52.458  INFO 3388 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-10-17 14:43:52.480  INFO 3388 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9292 (http) with context path '/mybatis'
+2019-10-17 14:43:52.480  INFO 3388 --- [restartedMain] com.wg.demo.MybatisApplication           : Started MybatisApplication in 2.012 seconds (JVM running for 36.015)
+2019-10-17 14:43:52.482  INFO 3388 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-10-17 14:44:17.310  INFO 10728 --- [restartedMain] com.wg.demo.MybatisApplication           : Starting MybatisApplication on DESKTOP-1JP5R06 with PID 10728 (started by bdqx_ in E:\2.workspace\git_workspace\Mybaitis_demo\mybatis-demo动态SQL)
+2019-10-17 14:44:17.312 DEBUG 10728 --- [restartedMain] com.wg.demo.MybatisApplication           : Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019-10-17 14:44:17.312  INFO 10728 --- [restartedMain] com.wg.demo.MybatisApplication           : No active profile set, falling back to default profiles: default
+2019-10-17 14:44:17.385  INFO 10728 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-17 14:44:17.385  INFO 10728 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-17 14:44:18.602  INFO 10728 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7315d21c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-17 14:44:19.180  INFO 10728 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9292 (http)
+2019-10-17 14:44:19.197  INFO 10728 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-17 14:44:19.197  INFO 10728 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-10-17 14:44:19.202  INFO 10728 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\java\jdk1.8.0_131\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Program Files (x86)\NetSarang\Xftp 6\;D:\Program Files (x86)\NetSarang\Xshell 6\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\1.我的下载\nTrun\nTrun_V3.0.3\Goto;C:\;rogram Files\Microsoft MPI\Bin\;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\Program Files\java\jdk1.8.0_131\bin;D:\Program Files\java\jdk1.8.0_131\jre\bin;D:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;D:\Program Files\Microsoft SQL Server\140\Tools\Binn\;D:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;D:\Program Files\Microsoft SQL Server\140\DTS\Binn\;E:\1.codetools\maven-3.5.4\bin\;E:\1.codetools\Anaconda3;E:\1.codetools\Anaconda3\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;D:\Program Files\erl10.0.1\bin;D:\Program Files\nodejs\;D:\Program Files\TortoiseSVN\bin;D:\Program Files\cmder\Cmder.exe;E:\1.codetools\adb;C:\ProgramData\chocolatey\bin;E:\1.codetools\mysql-5.7.23-winx64\bin;C:\Program Files (x86)\Google\Chrome\Application;C:\Users\bdqx_\AppData\Local\Microsoft\WindowsApps;;d:\Program Files\Docker Toolbox;d:\Program Files\JetBrains\PyCharm 2018.3.1\bin;;C:\Users\bdqx_\AppData\Roaming\npm;E:\1.codetools\Microsoft VS Code\bin;.]
+2019-10-17 14:44:19.400  INFO 10728 --- [restartedMain] o.a.c.c.C.[.[localhost].[/mybatis]       : Initializing Spring embedded WebApplicationContext
+2019-10-17 14:44:19.401  INFO 10728 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2016 ms
+2019-10-17 14:44:20.400  INFO 10728 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-17 14:44:20.489  INFO 10728 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-17 14:44:20.638  WARN 10728 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-10-17 14:44:21.383  INFO 10728 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-10-17 14:44:21.394  INFO 10728 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-10-17 14:44:21.407  INFO 10728 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-10-17 14:44:21.536  INFO 10728 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9292 (http) with context path '/mybatis'
+2019-10-17 14:44:21.538  INFO 10728 --- [restartedMain] com.wg.demo.MybatisApplication           : Started MybatisApplication in 4.707 seconds (JVM running for 5.914)
+2019-10-17 15:14:55.904  INFO 10728 --- [Thread-12] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-17 15:14:57.228  INFO 10728 --- [restartedMain] com.wg.demo.MybatisApplication           : Starting MybatisApplication on DESKTOP-1JP5R06 with PID 10728 (started by bdqx_ in E:\2.workspace\git_workspace\Mybaitis_demo\mybatis-demo动态SQL)
+2019-10-17 15:14:57.229 DEBUG 10728 --- [restartedMain] com.wg.demo.MybatisApplication           : Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019-10-17 15:14:57.229  INFO 10728 --- [restartedMain] com.wg.demo.MybatisApplication           : No active profile set, falling back to default profiles: default
+2019-10-17 15:14:58.486  INFO 10728 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7315d21c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-17 15:14:59.447  INFO 10728 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9292 (http)
+2019-10-17 15:14:59.448  INFO 10728 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-17 15:14:59.448  INFO 10728 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-10-17 15:14:59.591  INFO 10728 --- [restartedMain] o.a.c.c.C.[.[localhost].[/mybatis]       : Initializing Spring embedded WebApplicationContext
+2019-10-17 15:14:59.591  INFO 10728 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2359 ms
+2019-10-17 15:15:00.282  INFO 10728 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-17 15:15:00.349  INFO 10728 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-17 15:15:00.413  WARN 10728 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-10-17 15:15:00.797  INFO 10728 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-10-17 15:15:00.798  INFO 10728 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-10-17 15:15:00.801  INFO 10728 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-10-17 15:15:00.824  INFO 10728 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9292 (http) with context path '/mybatis'
+2019-10-17 15:15:00.825  INFO 10728 --- [restartedMain] com.wg.demo.MybatisApplication           : Started MybatisApplication in 3.676 seconds (JVM running for 1845.201)
+2019-10-17 15:15:00.827  INFO 10728 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-10-17 15:15:03.212  INFO 10728 --- [Thread-23] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-17 15:15:03.798  INFO 10728 --- [restartedMain] com.wg.demo.MybatisApplication           : Starting MybatisApplication on DESKTOP-1JP5R06 with PID 10728 (started by bdqx_ in E:\2.workspace\git_workspace\Mybaitis_demo\mybatis-demo动态SQL)
+2019-10-17 15:15:03.798 DEBUG 10728 --- [restartedMain] com.wg.demo.MybatisApplication           : Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019-10-17 15:15:03.798  INFO 10728 --- [restartedMain] com.wg.demo.MybatisApplication           : No active profile set, falling back to default profiles: default
+2019-10-17 15:15:04.151  INFO 10728 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7315d21c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-17 15:15:04.366  INFO 10728 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9292 (http)
+2019-10-17 15:15:04.367  INFO 10728 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-17 15:15:04.367  INFO 10728 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-10-17 15:15:04.403  INFO 10728 --- [restartedMain] o.a.c.c.C.[.[localhost].[/mybatis]       : Initializing Spring embedded WebApplicationContext
+2019-10-17 15:15:04.404  INFO 10728 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 605 ms
+2019-10-17 15:15:04.939  INFO 10728 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-17 15:15:05.019  INFO 10728 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-17 15:15:05.078  WARN 10728 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-10-17 15:15:05.431  INFO 10728 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-10-17 15:15:05.432  INFO 10728 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-10-17 15:15:05.434  INFO 10728 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-10-17 15:15:05.454  INFO 10728 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9292 (http) with context path '/mybatis'
+2019-10-17 15:15:05.455  INFO 10728 --- [restartedMain] com.wg.demo.MybatisApplication           : Started MybatisApplication in 1.685 seconds (JVM running for 1849.831)
+2019-10-17 15:15:05.457  INFO 10728 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged

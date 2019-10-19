@@ -29,6 +29,12 @@ public class RoleController {
         return ResultMsg.getMsg(roleMapper.selectRoleAndUserInfo(roleId));
     }
 
+    @ApiOperation(value = "查询角色_尝试使用JSONObject返回一对多查询")
+    @GetMapping("getJSONById{roleId}")
+    public ResultMsg getJSONById(@PathVariable(value="roleId") Long roleId){
+        return ResultMsg.getMsg(roleMapper.selectList(roleId));
+    }
+
 
     @ApiOperation(value = "查询角色_使用collection_分步查询_实现一对多查询")
     @GetMapping("getByIdByStep{roleId}")

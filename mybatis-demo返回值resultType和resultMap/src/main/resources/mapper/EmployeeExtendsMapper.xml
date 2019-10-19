@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wg.demo.dao.EmployeeMapper">
+    <select id="findByPaging" resultMap="BaseResultMap" parameterType="com.github.pagehelper.Page">
+    select
+    *
+    from employee
+    </select>
+
+    <select id="testWhere" resultMap="BaseResultMap" parameterType="map">
+        select
+        *
+        from employee
+
+        <where>
+            <if test="age != null">
+                age = #{age}
+            </if>
+            <if test="name != null">
+                AND name like %${name}%
+            </if>
+
+        </where>
+
+    </select>
+
+
+    <select id="getNameById" resultType="string" parameterType="long">
+    select name from employee where id= #{id}
+    </select>
+    <select id="getAgeById" resultType="integer" parameterType="long">
+    select age from employee where id= #{id}
+    </select>
+
+    <select id="getEmpAsBean" resultType="com.wg.demo.po.Employee" parameterType="long">
+    select * from employee where id= #{id}
+    </select>
+
+    <select id="getAllEmpsAsList" resultType="com.wg.demo.po.Employee">
+    select * from employee
+    </select>
+
+    <select id="getEmpAsMap" resultType="map" parameterType="long">
+    select id,name,gender,age,address from employee where id= #{id}
+    </select>
+
+    <select id="getAllEmpsAsMap" resultType="com.wg.demo.po.Employee">
+    select * from employee
+    </select>
+
+</mapper>

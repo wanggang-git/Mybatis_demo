@@ -3,6 +3,8 @@ package com.wg.demo.dao;
 import com.github.pagehelper.Page;
 import com.wg.demo.po.Employee;
 
+import java.util.Map;
+
 public interface EmployeeMapper {
     int deleteByPrimaryKey(Long id);
 
@@ -16,5 +18,5 @@ public interface EmployeeMapper {
 
     int updateByPrimaryKey(Employee record);
 
-    Page<Employee> findByPaging();
+    Page<Employee> findByPaging(Map param);
 }

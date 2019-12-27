@@ -15,6 +15,9 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * @Author: wanggang.io
  * @Date: 2019/2/2 10:38
@@ -62,9 +65,11 @@ public class EmployeeController {
 
     @ApiOperation(value = "分页查询")
     @GetMapping("findBypaging")
-    public ResultMsg findByPaging(Integer pageNum, Integer pageSize){
+    public ResultMsg findByPaging(Integer age,Integer pageNum, Integer pageSize){
         PageHelper.startPage(pageNum,pageSize);
-        Page<Employee> data = employeeMapper.findByPaging();
+        Map param = new HashMap();
+        param.put("age",age);
+        Page<Employee> data = employeeMapper.findByPaging(param);
         JSONObject result = new JSONObject();
         result.put("employees",data);
         result.put("pages",data.getPages());
